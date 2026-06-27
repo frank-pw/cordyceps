@@ -3,14 +3,13 @@
 > An Obsidian theme inspired by *The Last of Us* — survival logs, tarnished gold, worn borders, and the quiet weight of a world after, with dark and faithful light modes.
 
 ![Obsidian](https://img.shields.io/badge/Obsidian-1.5%2B-8fa35c?style=flat-square&logo=obsidian&logoColor=white)
-![Version](https://img.shields.io/badge/version-1.0.1-d8b85a?style=flat-square)
+![Version](https://img.shields.io/badge/version-1.1.0-d8b85a?style=flat-square)
 ![License](https://img.shields.io/badge/license-MIT-4a432f?style=flat-square)
 
 ---
 
 ## Preview
 
-<!-- Replace with an actual screenshot -->
 ![Cordyceps preview](preview.png)
 
 ---
@@ -23,16 +22,14 @@ The theme draws from the visual language of *The Last of Us*: blackened charcoal
 
 | Token | Hex | Role |
 |---|---|---|
-| Background | `#0d0d0a` | Main canvas |
-| Panel | `#11110d` | Sidebars, tabs |
-| Text | `#d8d0bd` | Body copy — faded paper |
-| Gold | `#d8b85a` | Accents, active tabs, links |
-| Olive | `#8fa35c` | Navigation, H3 headers, folder icons |
-| Orange | `#fa9442` | Open folders, warm warning accents |
+| Background | `#090906` | Main canvas |
+| Panel | `#0d0d0a` | Sidebars, tabs |
+| Text | `#d3cbb7` | Body copy — faded paper |
+| Gold | `#d0aa43` | Accents, active tabs, links |
+| Olive | `#819a4e` | Navigation, H3 headers, folder icons |
+| Orange | `#d87425` | Warm warning accents |
 | Rust | `#7a553d` | Subtle warmth |
-| Border | `#4a432f` | Worn edges |
-
-The CSS also defines softer and darker supporting variants for text, gold, olive, borders, code blocks, selections, and interactive states. Light mode remaps the same tokens to a faithful paper-log palette rather than a plain white UI.
+| Border | `#3b3727` | Worn edges |
 
 ---
 
@@ -40,15 +37,20 @@ The CSS also defines softer and darker supporting variants for text, gold, olive
 
 - **Pure CSS** — no snippets, plugins, or internet connection required
 - **Dark and light modes** — light mode keeps the worn survival-log mood instead of flattening into a neutral theme
-- **Subtle CRT scanline + film grain** overlay via a single `::before` pseudo-element
-- **Radial gradient panel vignettes** on sidebars and reading view
-- **File explorer folder icons** — closed folders in olive, open folders in orange, no arrows
+- **Subtle CRT scanline** overlay via a single `::before` pseudo-element
+- **Panel frames** — each workspace section has a thin gold-olive border around it
+- **Infected panel glow** — very subtle olive-amber radial gradients at panel corners
+- **File explorer folder icons** — outlined folder shape in gold via CSS mask, no arrows
 - **Monospace typography** throughout using IBM Plex Mono (or system fallback)
-- **Styled headings**: H1 with a bottom rule, H2 in warm gold, H3 in uppercase olive, plus distinct H4-H6 accents
-- **Callouts, blockquotes, tables, code blocks** — all reskinned to match the palette
+- **Styled headings**: H1 with a bottom rule, H2 in warm gold uppercase, H3 in olive uppercase, plus distinct H4–H6 accents
+- **Blockquote as card** — full four-sided border with dark background
+- **Solid HR separators** between content sections
+- **Callouts, tables, code blocks** — all reskinned to match the palette
 - **Custom checkboxes** with a gold fill and tick on completion
-- **Clearer focus and active states** for tabs, files, inputs, dropdowns, and canvas nodes
-- **Worn horizontal rules** that fade right to transparent
+- **Sidebar section labels** (VAULT, TAGS) — 10px uppercase, dim color, spaced apart
+- **All view headers** — uppercase label style (GRAPH VIEW, BACKLINKS, etc.)
+- **Tag pane** — styled items with gold hover
+- **Formatting toolbar** — muted icons, gold on hover
 - **Custom scrollbars**, graph view colors, metadata panel, modal and menu styling
 - **Mobile-ready** — adjusted padding for small screens
 
