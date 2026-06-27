@@ -91,6 +91,4 @@ The theme is designed with [**IBM Plex Mono**](https://fonts.google.com/specimen
 
 ---
 
-## License
 
-MIT © Francesco Palermi
