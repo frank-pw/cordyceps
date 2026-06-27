@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cordyceps Preview</title>
+    <link rel="stylesheet" href="theme.css">
+    <style>
+      body {
+        margin: 0;
+      }
+
+      .preview-board {
+        min-height: 100vh;
+        padding: 34px;
+        background: #15130f;
+      }
+
+      .preview-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 24px;
+        max-width: 1440px;
+        margin: 0 auto;
+      }
+
+      .preview-label {
+        margin: 0 0 14px;
+        color: #d8d0bd;
+        font: 700 13px/1.4 "IBM Plex Mono", "SFMono-Regular", Menlo, Consolas, monospace;
+        text-transform: uppercase;
+      }
+
+      .preview-frame {
+        min-width: 0;
+      }
+
+      .markdown-preview-view {
+        min-height: 720px;
+        padding: 36px 42px 64px;
+        border: 1px solid var(--tlou-border-soft);
+        background:
+          radial-gradient(circle at 85% 14%, rgba(255, 255, 255, 0.032), transparent 18%),
+          linear-gradient(90deg, rgba(255, 255, 255, 0.012), transparent 30%),
+          var(--tlou-panel);
+        box-shadow: 0 26px 80px rgba(0, 0, 0, 0.42), inset 0 0 34px rgba(0, 0, 0, 0.28);
+      }
+
+      @media (max-width: 980px) {
+        .preview-board {
+          padding: 18px;
+        }
+
+        .preview-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .markdown-preview-view {
+          min-height: 0;
+          padding: 28px 24px 48px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="preview-board">
+      <div class="preview-grid">
+        <section class="preview-frame theme-dark">
+          <p class="preview-label">Dark attuale</p>
+          <main class="markdown-preview-view">
+            <h1>Cordyceps</h1>
+            <p>Anteprima della gerarchia degli header con la palette dark del tema.</p>
+            <h2>H2 Warm Gold</h2>
+            <p>Testo corpo in carta consumata, con link <a href="#">dorato</a> e contrasto morbido.</p>
+            <h3>H3 Olive Uppercase</h3>
+            <blockquote>Una nota laterale per controllare bordi, accenti e atmosfera generale.</blockquote>
+            <h4>H4 Orange Accent</h4>
+            <p>Questo livello usa l'arancione caldo della palette.</p>
+            <h5>H5 Rust Accent</h5>
+            <p>Questo livello usa una variante rust leggibile sul fondo scuro.</p>
+            <h6>H6 Muted Accent</h6>
+            <p>Questo livello resta piu sommesso, utile per dettagli secondari.</p>
+          </main>
+        </section>
+
+        <section class="preview-frame theme-light">
+          <p class="preview-label">Light fedele</p>
+          <main class="markdown-preview-view">
+            <h1>Cordyceps</h1>
+            <p>La stessa identita visuale, ma su una base chiara da carta log consumata.</p>
+            <h2>H2 Tarnished Gold</h2>
+            <p>Testo carbone su pannello caldo, con link <a href="#">oro brunito</a> e accenti controllati.</p>
+            <h3>H3 Field Olive</h3>
+            <blockquote>La light mode resta ruvida e archivistica, senza diventare bianca o clinica.</blockquote>
+            <h4>H4 Burnt Orange</h4>
+            <p>Orange piu scuro per restare leggibile sulla carta chiara.</p>
+            <h5>H5 Rust Mark</h5>
+            <p>Rust naturale per sezioni piccole e note operative.</p>
+            <h6>H6 Muted Field Note</h6>
+            <p>Muted caldo per micro-heading e dettagli secondari. Esempio <code>inline code</code>.</p>
+          </main>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
